@@ -18,46 +18,36 @@
 What is DateSlider ?
 ====================
 
-It is an android dialog which can be used in a similar way to the default DatePicker or TimePicker
+It is an dialog which can be used in a similar way to the default DatePicker or TimePicker
 dialog. Its main advantages are a slide based interface and features such as a minimum or maximum
 date, or a minute interval for the time picker variant 
 
 
-How To Install
-==============
+How To Install for Eclipse users
+================================
 
-in the files you can find a sample application (i.e. activity) which
-implements the DateSlider. Just copy the relevant files into your project
-and you should be ready to go!
+Its implemented as android library, so as the first import DateSlider-lib into your workspace.
+You need at least ADT17 (because support of custom atributes in layouts).
 
-The relevant files for the _default_ slider are:
 
-  In the src/.../DateSlider folder:
-   - DateSlider.java
-   - DefaultDateSlider.java
-   - ScrollLayout.java
-   - ScrollContainer.java
-   - TimeObject.java
-   - TimeView.java
+How To Install for maven users
+================================
+
+The project is not in maven central repository, so you can build and install the lib localy from  DateSlider-lib
+
+  mvn clean install
   
-  In the src/.../DateSlider/labeler folder:
-   - DayLabeler.java
-   - DayDateLabeler.java
-   - Labeler.java
-   - MonthLabeler.java
-   - MonthYearLabeler.java
-   - Util.java
-  
-  In the src/.../DateSlider/labeler folder:
-   - *.java (all files) 
-   
+Define dependecy in your project's pom.xml (see Demo project in DateSlider-Demo)  
 
-  In the res/ folder:
-   - drawable/*.xml
-   - layout/defaultdateslider.xml
-   - layout/dialogbuttons.xml
-   - layout/dialogtitle.xml
-   - values/*.xml
+ <dependencies>
+    <dependency>
+      <groupId>com.googlecode.android.widgets.DateSlider</groupId>
+      <artifactId>DateSlider-lib</artifactId>
+      <type>apklib</type>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+  
 
 If you want to use any other dateslider implementation just follow the dependencies. (I hope the
 names of the files should give some clues about whether or not they are needed for a certain
