@@ -1,0 +1,14 @@
+*.class
+.DS_Store
+*.apk
+*.ap_
+*.dex
+.metadata/
+bin/
+gen/
+tmp/
+build/
+local.properties
+*/proguard/*.txt
+!*/proguard/mapping.txt
+target/
