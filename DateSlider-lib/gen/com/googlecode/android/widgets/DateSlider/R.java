@@ -88,25 +88,42 @@ containing a value of this type.
         public static int Scroller=0x7f050000;
     }
     public static final class styleable {
-        /** Attributes that can be used with a ScrollLayout.
+        /**          <attr name="childGravity">
+            <flag name="center" value="0x011"/>
+            <flag name="center_horizontal" value="0x001"/>
+            <flag name="center_certical" value="0x010"/>
+            <flag name="left" value="0x003"/>
+            <flag name="right" value="0x005"/>
+            <flag name="top" value="0x030"/>
+            <flag name="bottom" value="0x050"/>
+        </attr> 
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ScrollLayout_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #ScrollLayout_childHeight com.googlecode.android.widgets.DateSlider:childHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #ScrollLayout_childWidth com.googlecode.android.widgets.DateSlider:childWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #ScrollLayout_labelerClass com.googlecode.android.widgets.DateSlider:labelerClass}</code></td><td></td></tr>
            <tr><td><code>{@link #ScrollLayout_labelerFormat com.googlecode.android.widgets.DateSlider:labelerFormat}</code></td><td></td></tr>
            </table>
+           @see #ScrollLayout_android_gravity
            @see #ScrollLayout_childHeight
            @see #ScrollLayout_childWidth
            @see #ScrollLayout_labelerClass
            @see #ScrollLayout_labelerFormat
          */
         public static final int[] ScrollLayout = {
-            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003
+            0x010100af, 0x7f010000, 0x7f010001, 0x7f010002,
+            0x7f010003
         };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#gravity}
+          attribute's value can be found in the {@link #ScrollLayout} array.
+          @attr name android:gravity
+        */
+        public static final int ScrollLayout_android_gravity = 0;
         /**
           <p>This symbol is the offset where the {@link com.googlecode.android.widgets.DateSlider.R.attr#childHeight}
           attribute's value can be found in the {@link #ScrollLayout} array.
@@ -122,7 +139,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.googlecode.android.widgets.DateSlider:childHeight
         */
-        public static final int ScrollLayout_childHeight = 3;
+        public static final int ScrollLayout_childHeight = 4;
         /**
           <p>This symbol is the offset where the {@link com.googlecode.android.widgets.DateSlider.R.attr#childWidth}
           attribute's value can be found in the {@link #ScrollLayout} array.
@@ -138,7 +155,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.googlecode.android.widgets.DateSlider:childWidth
         */
-        public static final int ScrollLayout_childWidth = 2;
+        public static final int ScrollLayout_childWidth = 3;
         /**
           <p>This symbol is the offset where the {@link com.googlecode.android.widgets.DateSlider.R.attr#labelerClass}
           attribute's value can be found in the {@link #ScrollLayout} array.
@@ -152,7 +169,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.googlecode.android.widgets.DateSlider:labelerClass
         */
-        public static final int ScrollLayout_labelerClass = 0;
+        public static final int ScrollLayout_labelerClass = 1;
         /**
           <p>This symbol is the offset where the {@link com.googlecode.android.widgets.DateSlider.R.attr#labelerFormat}
           attribute's value can be found in the {@link #ScrollLayout} array.
@@ -166,6 +183,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.googlecode.android.widgets.DateSlider:labelerFormat
         */
-        public static final int ScrollLayout_labelerFormat = 1;
+        public static final int ScrollLayout_labelerFormat = 2;
     };
 }
