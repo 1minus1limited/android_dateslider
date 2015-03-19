@@ -123,7 +123,7 @@ containing a value of this type.
           attribute's value can be found in the {@link #ScrollLayout} array.
           @attr name android:gravity
         */
-        public static final int ScrollLayout_android_gravity = 0;
+        public static int ScrollLayout_android_gravity = 0;
         /**
           <p>This symbol is the offset where the {@link com.googlecode.android.widgets.DateSlider.R.attr#childHeight}
           attribute's value can be found in the {@link #ScrollLayout} array.
@@ -139,7 +139,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.googlecode.android.widgets.DateSlider:childHeight
         */
-        public static final int ScrollLayout_childHeight = 4;
+        public static int ScrollLayout_childHeight = 4;
         /**
           <p>This symbol is the offset where the {@link com.googlecode.android.widgets.DateSlider.R.attr#childWidth}
           attribute's value can be found in the {@link #ScrollLayout} array.
@@ -155,7 +155,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.googlecode.android.widgets.DateSlider:childWidth
         */
-        public static final int ScrollLayout_childWidth = 3;
+        public static int ScrollLayout_childWidth = 3;
         /**
           <p>This symbol is the offset where the {@link com.googlecode.android.widgets.DateSlider.R.attr#labelerClass}
           attribute's value can be found in the {@link #ScrollLayout} array.
@@ -169,7 +169,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.googlecode.android.widgets.DateSlider:labelerClass
         */
-        public static final int ScrollLayout_labelerClass = 1;
+        public static int ScrollLayout_labelerClass = 1;
         /**
           <p>This symbol is the offset where the {@link com.googlecode.android.widgets.DateSlider.R.attr#labelerFormat}
           attribute's value can be found in the {@link #ScrollLayout} array.
@@ -183,6 +183,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.googlecode.android.widgets.DateSlider:labelerFormat
         */
-        public static final int ScrollLayout_labelerFormat = 2;
+        public static int ScrollLayout_labelerFormat = 2;
     };
 }
