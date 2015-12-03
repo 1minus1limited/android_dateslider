@@ -3,6 +3,7 @@
 *.apk
 *.ap_
 *.dex
+*.iml
 .metadata/
 bin/
 gen/
